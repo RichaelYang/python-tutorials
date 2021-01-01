@@ -1,7 +1,9 @@
 # python-tutorials
 python自学教程
 
-一、学会使用命令行
+github排版https://www.cnblogs.com/ray-h/p/10487054.html
+
+## 一、学会使用命令行
 
 1.pwd 打印当前工作目录
 
@@ -43,4 +45,42 @@ python自学教程
     
    rm -r A 删除A文件夹中的所有内容
 
-13.exit 退出命令窗口
+13.exit 退出命令窗口 
+
+## 二、输出和输入
+
+### 1.输出print()
+
+print("")
+
+print(f"how to use print {varible}")
+
+print("{},{},{}".format(1,2,3))
+
+### 2.输入input()
+
+weight=input("how much do you weigh?",end=" ") //end=" " 指的是不换行
+
+### 3.argv输入法(系统变量输入法)
+
+执行命令行
+
+python ex12.py 1 2 3
+
+from sys import argv
+
+script,one,two,three=argv //解包
+
+### 4.对文本进行处理
+
+txt=open(filename，'w')打开文本 r w r+ w+ 文件指针都是放在开头，即如果是可以写入的模式，则会删除原来的内容。 a a+ 模式则指针放在文本结尾，用于添加内容不会删除原先内容。
+
+
+print(txt.read()) 打印文本内容
+
+
+
+
+
+
+
