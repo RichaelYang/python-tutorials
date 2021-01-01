@@ -3,7 +3,9 @@ python自学教程
 
 一、学会使用命令行
 1.pwd 打印当前工作目录
+
 2.cd ~ 回到home
+
 3.mkdir 创建目录（文件夹）
 4.cd temp/stuff 到达stuff目录下（文件夹下）
   cd ../.. 往回退两个目录
