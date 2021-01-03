@@ -69,16 +69,43 @@ python ex12.py 1 2 3
 
 from sys import argv
 
-script,one,two,three=argv //解包
+script,one,two,three=argv **解包
 
 ### 4.对文本进行处理
 
 txt=open(filename，'w')打开文本 r w r+ w+ 文件指针都是放在开头，即如果是可以写入的模式，则会删除原来的内容。 a a+ 模式则指针放在文本结尾，用于添加内容不会删除原先内容。
 
 
-print(txt.read()) 打印文本内容
+print(txt.read())  **打印文本内容
 
+txt.truncate() **清空文本
 
+txt.write("a") **在文本中写入内容
+
+txt.close() **关闭文本
+
+txt.seek(0) **把读写位置放在文件最开头
+
+txt.readline()  **读文本的一行内容
+
+## 三、函数
+
+### 1. 函数格式
+
+def function(*args):
+
+    arg1,arg2=args
+
+    return arg1
+    
+
+def  function(arg):
+
+     print(f"the variable is {arg}")
+
+### 2. 函数的使用
+
+function(1,2)
 
 
 
