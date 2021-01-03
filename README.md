@@ -93,20 +93,32 @@ txt.readline()  **读文本的一行内容
 ### 1. 函数格式
 
     def function(*args):
-    arg1,arg2=args
-
-    return arg1
+         arg1,arg2=args
+         return arg1
     
-
     def  function(arg):
-
-     print(f"the variable is {arg}")
+         print(f"the variable is {arg}")
 
 ### 2. 函数的使用
 
-function(1,2)
+    function(1,2)
 
+## 四、判断：
 
+### 1.if判断
+   
+  
+    if a>b:
+      print("a>b")
+    
+    if a>b:
+      print(a)
+    elif b>c:
+      print(b)
+    else:
+      print(c)
+   
+    
 
 
 
