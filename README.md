@@ -93,7 +93,6 @@ txt.readline()  **读文本的一行内容
 ### 1. 函数格式
 
     def function(*args):
-
     arg1,arg2=args
 
     return arg1
