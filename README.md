@@ -118,7 +118,67 @@ txt.readline()  **读文本的一行内容
     else:
       print(c)
    
+## 五、循环和列表
+
+### 列表
+    colors=['red','yellow','blue']
+    color=colors[0]
     
+### 操作列表
+    colors.pop() //弹出一个元素
+    colors.append('yellow') //在末尾添加一个元素
+    print(' '.join(colors)) // split the element by using blank
+### for循环
+    for color in colors:
+      print(f"the color is {color}")
 
+### while循环
+     while i<6:
+       print(f"At the top i is {i}")
+       i+=1
+     
+## 六、函数
 
+### 格式
+    def gold_room():
+        print("You are in the gold room")
+        return 1
+      
+
+### Using method
+    
+    gold_room()
+
+## 七、字典
+### 格式
+    stuff = {'name':'Zed','age':'14','height':'12'}
+    print(stuff['name'])
+### operate dictionary    
+    name=stuff.get('name','don't exist name') //judge the element whether exist nor not 
+    
+## 八、Model
+### mystuff.py
+     name='Micheal'
+     def apple():
+        print("I am apples")
+### main.py
+    import mystuff
+    mystuff.apple()
+    print(mystuff.name)
+    
+## 九、class
+### format
+    class MyStuff(object):
+       def __init__(self,age):
+          self.name='Michael'
+          self.age=age
+          
+       def apple(self):
+          print("I am classy apples")
+          
+          
+     people=MyStuff(18)
+     people.apple()
+     print(people.name)
+     print(people.age)
 
